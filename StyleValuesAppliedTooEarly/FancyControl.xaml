@@ -20,12 +20,18 @@
 
         <Label 
             Padding="0,16,0,0"
-            Text="Both of the above Label's Text values are being set by a Style which is defined in Styles.xaml and referenced by Key as a DynamicResource in FancyControl.xaml"
+            TextType="Html"
+            Text="Both of the above Label's Text values are being set by &lt;b&gt;FancyControlStyle1&lt;/b&gt; (defined in Styles.xaml) and referenced by Key as a DynamicResource in FancyControl.xaml"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
         <Label 
-            Text="The first Label has a simple null check before setting the Text. It ends up being null and the Text value is never set."
+            Text="Both Labels should read &quot;This is the Style text&quot;."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="The first Label has a simple null check before setting Text. It ends up being null and the Text value is never set."
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
